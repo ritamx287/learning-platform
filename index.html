@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-section.css">
+    <!-- Include Font Awesome for the phone icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section class="home-section">
+        <div class="text-container">
+            <h1 class="main-text">LEARN STOCK MARKET IN</h1>
+            <h2 class="sub-text">YOUR OWN LANGUAGE</h2>
+            <h3 class="additional-text">Anybody, Anytime, Anywhere!</h3>
+            <!-- Add phone icon and make it clickable -->
+            <button class="helpline" onclick="callHelpline()"><i class="fas fa-phone"></i> Helpline : +91 9016791791</button>
+            <!-- Search bar -->
+            <div class="search-wrapper">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-section">
+        <div class="course">
+            <img src="Lea.jpg" alt="Course Image 1" class="course-image">
+            <button class="view-course">View Course</button>
+        </div>
+        <div class="course">
+            <img src="leaa.jpg" alt="Course Image 2" class="course-image">
+            <button class="view-course">View Course</button>
+        </div>
+    </section>
+
+
+    <script>
+        function callHelpline() {
+            // Open phone dialer with the helpline number
+            window.open('tel:+919016791791');
+        }
+    </script>
+</body>
+</html>
