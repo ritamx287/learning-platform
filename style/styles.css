@@ -1,0 +1,63 @@
+/* Existing styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Default font family */
+    scroll-behavior: smooth;
+    background-color: #090b31;
+}
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Adjust the width to make it thinner */
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background */
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #aaa; /* Color of the scrollbar handle */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #f4f4f4; /* Border around the handle */
+    transition: background 0.3s, border-color 0.3s; /* Smooth transition */
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Darker color when hovered */
+  }
+
+  /* Button on scrollbar */
+  ::-webkit-scrollbar-button {
+    display: none; /* Hide scrollbar buttons */
+  }
+
+  /* Corner */
+  ::-webkit-scrollbar-corner {
+    background: transparent; /* Transparent background for scrollbar corner */
+  }
+
+  /* Scrollbar track with shadow */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow to the track */
+  }
+
+  /* Thin scrollbar in Chrome/Opera/Safari */
+  ::-webkit-scrollbar-thumb:vertical {
+    min-height: 50px; /* Height of the thumb */
+  }
+
+  /* Thin scrollbar in Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #aaa transparent; /* Color of the thumb and transparent track */
+  }
+
+  /* Wide scrollbar in Firefox */
+  html {
+    scrollbar-width: thick;
+    scrollbar-color: #aaa transparent; /* Color of the thumb and transparent track */
+  }
+

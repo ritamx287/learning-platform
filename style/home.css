@@ -1,0 +1,195 @@
+
+.home-section {
+    height: 100vh;
+    background-image: url('https://onedrive.live.com/embed?resid=7772EE23CB982064%21322&authkey=%21AKDYvM1o4tCgvOY&width=4000&height=2667'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s ease; /* Added transition for smoother animation */
+    transform-origin: center center; /* Set the rotation origin */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background-color 0.5s ease; /* Smooth transition for opacity change */
+}
+
+.text-container {
+    text-align: center;
+    color: white;
+    transition: transform 0.5s ease; /* Added transition for smoother animation */
+    transform: translateY(0); /* Initial transform */
+}
+
+
+.main-text {
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    animation: shine 2s infinite linear; /* Shining animation */
+}
+
+@keyframes shine {
+    0% {
+        color: white;
+        text-shadow: none;
+    }
+    50% {
+        color: gold;
+        text-shadow: 0 0 10px gold;
+    }
+    100% {
+        color: white;
+        text-shadow: none;
+    }
+}
+
+.sub-text {
+    font-size: 2rem;
+    color: #FF8C00; /* Orange color */
+    margin: 5px 0;
+    animation: slideInLeft 1s ease-out; /* Slide in animation */
+}
+
+.additional-text {
+    font-size: 1.5rem;
+    color: #32CD32; /* Green color */
+    margin: 5px 0;
+    animation: slideInRight 1s ease-out; /* Slide in animation */
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.helpline {
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 10px 20px;
+    border-radius: 30px; /* Rounded border */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.helpline:hover {
+    transform: translateY(-2px); /* Move button up slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.helpline i {
+    margin-right: 5px;
+}
+
+/* New styles for search bar */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add some spacing */
+}
+
+.search-bar {
+    width: 600px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1em; /* Decrease font size */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #333; /* Darken text color */
+    transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    font-family: 'Roboto', sans-serif; /* Use Google Font Roboto */
+}
+
+.search-bar:focus {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Add a subtle shadow */
+}
+
+.search-bar::placeholder {
+    color: #aaa; /* Lighten placeholder color */
+}
+
+.search-bar:focus::placeholder {
+    color: #333; /* Change placeholder color when focused */
+}
+
+.search-button {
+    padding: 18px 22px;
+    border: none;
+    border-radius: 22px;
+    background-color: #007bff; /* Blue button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    margin-left: 10px; /* Add some spacing between search bar and button */
+    position: relative;
+    overflow: hidden;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
+
+.search-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: width 0.3s ease-out, height 0.3s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+.search-button:hover::before {
+    width: 0;
+    height: 0;
+}
+.section-divider {
+    position: relative;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    margin-bottom: auto;
+  }

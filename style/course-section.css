@@ -1,0 +1,45 @@
+.course-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #090b31; /* Dark background color */
+    padding: 50px 0; /* Add padding for spacing */
+}
+
+.course {
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+    border-radius: 10px; /* Add border radius for a rounded look */
+    box-shadow: 0px 2px 5px rgba(117, 117, 117, 0.5);
+}
+
+.course-image {
+    width: 400px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transition for scale and filter */
+}
+
+.course:hover .course-image {
+    transform: scale(1.1); /* Scale up image on hover */
+    filter: blur(5px); /* Apply blur effect on hover */
+}
+
+.view-course {
+    position: absolute;
+    bottom: -50px; /* Initial position below image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff; /* Button color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px; /* Round button corners */
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease, bottom 0.5s ease; /* Smooth transition for opacity and position */
+}
+
+.course:hover .view-course {
+    opacity: 1; /* Show button on hover */
+    bottom: 20px; /* Move button up on hover */
+}

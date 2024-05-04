@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="lightbox.css">
-    <link rel="stylesheet" href="course-section.css">
-    <!-- Include Font Awesome for the phone icon -->
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/course-section.css">
+    <link rel="stylesheet" href="style/course-container.css">
+    <link rel="stylesheet" href="style/technical-analysis-section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -20,7 +22,9 @@
             <div class="icons">
                 <i class="fas fa-phone" id="phone-icon"></i>
                 <i class="fas fa-search" id="search-icon"></i>
-                <button class="login-button"><i class="fas fa-user"></i> Login</button>
+                <button class="login-button" onclick="window.location.href='login.html'">
+                    <i class="fas fa-user"></i> Login
+                  </button>
                 <div class="dropdown"><div class="dropdown">
                     <button class="language-button"><i class="fas fa-globe"></i> Language</button>
                     <div class="dropdown-content">
@@ -33,7 +37,8 @@
         </div>
     </header>
 
-    <section class="home-section">
+    <section class="home-section parallax">
+      <div class="overlay"></div>
         <div class="text-container">
             <h1 class="main-text">LEARN STOCK MARKET IN</h1>
             <h2 class="sub-text">YOUR OWN LANGUAGE</h2>
@@ -46,18 +51,101 @@
                 <button class="search-button">Search</button>
             </div>
         </div>
+        <svg class="section-divider" viewBox="0 0 1920 60" aria-hidden="true"><path data-theme="softSecondary" fill="#090b31" d="M0,80.75H1920V45.833H1742.083a80.491,80.491,0,0,1,12.863-1.55c5.2-.26,17.24-.3,24.153-.24,26.69.222,54.377,1.094,79.341.96,19.287-.1,37.1-.372,53.573-.788L1920,44V34.078l-6.614.216-9.221.256c-6.252.147-12.7.249-19.265.32-13.132.14-26.739.15-40.206.125-26.935-.052-53.313-.247-74.22.168-14.367-1.4-32.582-.756-48.293-1.92-10.145.509-20.876.936-24.149,2.4-16.09-.266-37.611,2.532-50.019.479V34.684c-10.959-2.291-33.371-1.869-48.292-3.84-15.861-.512-26.214,1.347-39.671,1.92-7.032.178-5.941-.773-13.8-.481-40.751-.071-41.131,5.477-62.087,8.16-4.569-5.691-47.085-5.126-77.622-5.04-2.333-4.154-22.643-5.808-50.015-6.479-4.677-2.069-17.763-2.969-22.423-5.04-4.7-.175-3.474.477-6.9.479-11.485-2.964-40.092-2.449-63.813-3.36-23.312.6-29.4,3.589-55.195,3.841-8.3-3.783-56.5-4.561-84.513-3.361-.316-1.857-5.682-3.862-20.7-4.8-2.193-.137-6.78.122-10.352,0-16.331-.564-22.974-3.145-39.671-1.441-22.812-1.938-73.831-3.919-98.311-.719-4.315-2.2-15.369-3.462-20.7-5.521-23.122-.714-41.26-2.815-65.54-2.64-13.5,1-29.918,1.6-39.671,3.12.27,1.317-1.305,2.38-6.9,2.88-35.562-1.333-83.117-2.545-93.139,2.88-14.338-.314-8.341,2.2-22.423,1.92-5.17-.16-2.615-1.4-6.9-1.68-36.327-1.894-80.653-1.762-100.041,2.161-12.433-1.631-21.648-3.708-36.221-5.04-13.359.1-36.33-.325-48.293-1.2-32.483.6-42.463,4.331-53.471,7.92-25.227-.147-43.752,2.274-58.641,4.321-11.966-1.189-27.56-.426-39.67-1.441-19.514,1.284-40.772,2.328-53.468,4.561C301.584,31.04,294,33.888,283.7,37.8c-15.047-.774-19.865-3.5-36.221-4.321-10.453-.522-37.12-1.01-48.3-.959-10.184.046-17.188,1.062-27.595.719-18.244,2.022-31.516,4.736-46.57,7.2-3.726,2.091-9.8,3.854-17.5,5.39H4.061c-.734-1.281-1.512-2.592-2.344-3.949-.546-.09-1.13-.175-1.717-.26Z"/></svg>
     </section>
 
     <section class="course-section">
-        <div class="course">
-            <img src="Lea.jpg" alt="Course Image 1" class="course-image">
-            <button class="view-course">View Course</button>
+      <div class="course">
+          <img src="img/Lea.jpg" alt="Course Image 1" class="course-image">
+          <button class="view-course">View Course</button>
+      </div>
+      <div class="course">
+          <img src="img/leaa.jpg" alt="Course Image 2" class="course-image">
+          <button class="view-course">View Course</button>
+      </div>
+      <div class="course">
+          <img src="img/leaa.jpg" alt="Course Image 2" class="course-image">
+          <button class="view-course">View Course</button>
+      </div>
+  </section>
+
+  <section class="course-container">
+  <div class="course-info html-css-js">
+    <h2 class="course-title">Course Title 1</h2>
+    <p class="course-detail"><strong class="course-label">Language:</strong> HTML, CSS, JavaScript</p>
+    <p class="course-detail"><strong class="course-label">Timing:</strong> Flexible</p>
+    <p class="course-description"><strong class="course-label">Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button class="enroll-button">Enroll Now</button>
+  </div>
+  <div class="course-info python">
+    <h2 class="course-title">Course Title 2</h2>
+    <p class="course-detail"><strong class="course-label">Language:</strong> Python</p>
+    <p class="course-detail"><strong class="course-label">Timing:</strong> Mondays and Wednesdays, 6-8 PM</p>
+    <p class="course-description"><strong class="course-label">Description:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <button class="enroll-button">Enroll Now</button>
+  </div>
+  <div class="course-info java">
+    <h2 class="course-title">Course Title 3</h2>
+    <p class="course-detail"><strong class="course-label">Language:</strong> Java</p>
+    <p class="course-detail"><strong class="course-label">Timing:</strong> Saturdays, 10 AM - 2 PM</p>
+    <p class="course-description"><strong class="course-label">Description:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="enroll-button">Enroll Now</button>
+  </div>
+</section>
+
+<section class="technical-analysis-section">
+  <div class="content-wrapper">
+    <h2 class="Essentials">Essentials of Technical Analysis</h2>
+    <p class="Technical">Technical analysis is a method of evaluating securities by analyzing statistics generated by market activity, such as past prices and volume. Common tools used in technical analysis include charts, trend lines, and indicators like moving averages and relative strength index (RSI).</p>
+    <div class="learn-more-button-container">
+      <button class="learn-more-button">Learn More</button>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Press & Media</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Cancellation Policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="course">
-            <img src="leaa.jpg" alt="Course Image 2" class="course-image">
-            <button class="view-course">View Course</button>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
         </div>
-    </section>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Your Name | All Rights Reserved</p>
+      </div>
+    </footer>
 
     <script>
         function callHelpline() {
@@ -66,5 +154,8 @@
         }
     </script>
      <script src="header.js"></script>
+     <script src="home.js"></script>
+     <script src="footer.js"></script>
+     <script src="course-container.js"></script>
 </body>
 </html>

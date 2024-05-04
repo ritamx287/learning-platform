@@ -1,0 +1,51 @@
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #090b31;
+    padding: 40px 0;
+    margin-top: -5rem;
+  }
+
+  .course-info {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0px 2px 5px rgba(117, 117, 117, 0.5);
+    margin: 0 20px;
+    position: relative;
+  }
+
+  .course-title {
+    margin-top: 1;
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .course-detail, .course-description {
+    margin: 20px 0;
+    color: #cccccc;
+  }
+
+  .course-label {
+    color: #ffffff;
+  }
+
+  .enroll-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .enroll-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
